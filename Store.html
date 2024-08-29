@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Store.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Store</title>
+</head>
+<body>
+    <header class="header-site">
+        <div class="header-content gradient">
+            <div class="menu">
+                <div id="menu-bar">
+                    <a href="javascript:void(0)" id="menu-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="50" viewBox="0 0 43 48">
+                            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M36.1,7.5h2.4c1.1,0,2,0.9,2,2v3c0,1.1-0.9,2-2,2H18"></path>
+                            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M13,14.5H9.5c-1.1,0-2-0.9-2-2v-3c0-1.1,0.9-2,2-2h21.3"></path>
+                            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M13.3,27.5H9.5c-1.1,0-2-0.9-2-2v-3c0-1.1,0.9-2,2-2h20"></path>
+                            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M35,20.5h3.5c1.1,0,2,0.9,2,2v3c0,1.1-0.9,2-2,2h-20"></path>
+                            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M13.5,40.5h-4c-1.1,0-2-0.9-2-2v-3c0-1.1,0.9-2,2-2h19.6"></path>
+                            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M34.2,33.5h4.3c1.1,0,2,0.9,2,2v3c0,1.1-0.9,2-2,2h-20"></path>
+                        </svg>
+                        <!-- <i class="material-icons" style="font-size: 40px;">menu</i> -->
+                    </a>
+                </div>
+                <nav class="webname">
+                    <a href="HomePage.html"><h1 id="name">GameVerse</h1></a>
+                </nav>
+            </div>
+
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search">
+                <i id="search-icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 70 70">
+                    <path d="M 7 4 C 5.35 4 4 5.35 4 7 L 4 43 C 4 44.65 5.35 46 7 46 L 43 46 C 44.65 46 46 44.65 46 43 L 46 7 C 46 5.35 44.65 4 43 4 L 7 4 z M 22.5 13 C 27.74 13 32 17.26 32 22.5 C 32 24.76 31.210625 26.840703 29.890625 28.470703 L 37.710938 36.289062 L 36.289062 37.710938 L 28.470703 29.890625 C 26.840703 31.210625 24.76 32 22.5 32 C 17.26 32 13 27.74 13 22.5 C 13 17.26 17.26 13 22.5 13 z M 22.5 15 A 7.5 7.5 0 0 0 15 22.5 A 7.5 7.5 0 0 0 22.5 30 A 7.5 7.5 0 0 0 30 22.5 A 7.5 7.5 0 0 0 22.5 15 z"></path>
+                </svg></i>
+            </div>
+
+            <div class="profile">
+                <div class="user">
+                    <img src="Images/James Harden.jpg" alt="user">
+                    <p>Username</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <aside class="menu-container" id="menu-container">
+        <nav class="menu-nav">
+            <div id="menu">Menu</div>
+            <ul>
+                <a href="Store.html" id="store"><li id="store">Store</li></a>
+                <a href="WishList.html"><li id="wishlist">WishList</li></a>
+                <a href=""><li id="mygame">MyGame</li></a>
+            </ul>
+        </nav>
+        <div class="setting-btn">
+            <ul>
+                <li id="setting"><a href="">Setting</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <main>
+        <h1 id="categories">Categories</h1>
+        <section class="sports">
+            <div class="sports-container">
+                <div class="sports-title">
+                    <h2 id="sports">SPORTS</h2>
+                    <a href=""><i class="fa fa-arrow-right" style="font-size:24px"></i></a>
+                </div>
+                <div class="sports-games">
+                    <div class="game">
+                        <img src="Images/fc23.avif" alt="FIFA23">
+                        <div class="details">
+                            <div class="option">
+                                <i class="fa fa-plus-square wishlist" style="font-size:24px;"></i>
+                                <button class="price">Buy $139.90</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game">
+                        <img src="Images/fc24.webp" alt="FIFA24">
+                        <div class="details">
+                            <div class="option">
+                                <i class="fa fa-plus-square wishlist" style="font-size:24px;"></i>
+                                <button class="price">Buy $139.90</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game">
+                        <img src="Images/nba2k23.webp" alt="NBA 2k23">
+                        <div class="details">
+                            <div class="option">
+                                <i class="fa fa-plus-square wishlist" style="font-size:24px;"></i>
+                                <button class="price">Buy $139.90</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game">
+                        <img src="Images/nba2k24.webp" alt="NBA 2k23">
+                        <div class="details">
+                            <div class="option">
+                                <i class="fa fa-plus-square wishlist" style="font-size:24px;"></i>
+                                <button class="price">Buy $139.90</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="adventure">
+            <div class="sports-container">
+                <div class="sports-title">
+                    <h2 id="sports">ADVENTURE</h2>
+                    <a href=""><i class="fa fa-arrow-right" style="font-size:24px"></i></a>
+                </div>
+                <div class="sports-games">
+                    <div class="game">
+                        <img src="Images/fc23.avif" alt="FIFA23">
+                        <div class="details">
+                            <div class="option">
+                                <i class="fa fa-plus-square add-wishlist" style="font-size:24px;"></i>
+                                <button class="price">Buy $139.90</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game">
+                        <img src="Images/elden.webp" alt="FIFA24">
+                        <div class="details">
+                            <div class="option">
+                                <i class="fa fa-plus-square add-wishlist" style="font-size:24px;"></i>
+                                <button class="price">Buy $139.90</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game">
+                        <img src="Images/nba2k23.webp" alt="NBA 2k23">
+                        <div class="details">
+                            <div class="option">
+                                <i class="fa fa-plus-square wishlist" style="font-size:24px;"></i>
+                                <button class="price" id="prices">Buy $139.90</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game">
+                        <img src="Images/nba2k24.webp" alt="NBA 2k23">
+                        <div class="details">
+                            <div class="option">
+                                <i class="fa fa-plus-square" id="add-wishlist" style="font-size:24px;"></i>
+                                <button class="price">Buy $139.90</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="HomePage.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

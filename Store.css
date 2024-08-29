@@ -1,0 +1,273 @@
+:root{
+    --font:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(circle, #678199 , rgb(72, 95, 112));
+}
+
+.header-site{
+    max-width: 100%;
+}
+
+.header-content{
+    display: grid;
+    grid-template-areas: "Menu Search Profile";
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 5rem;
+    width: 100%;
+    min-height: 80px;
+    min-width: max-content;
+    background-color: #678199;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: Menu;
+}
+
+.menu-bar, svg{
+    padding: 5%;
+
+}
+
+.menu-container, .menu-nav{
+    background-color: #678199;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.menu-container {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s; /* Smooth transition for width */
+
+}
+
+.menu-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    position: fixed; /* Keep the menu button fixed at the top */
+    z-index: 1000; /* Ensure the menu button is above other content */
+}
+
+#menu{
+    padding: 3.5vh;
+    text-align: center;
+    font-size: larger;
+    font-family: var(--font);
+    font-size: 1.5em;
+    font-weight: bold;
+    border-top-right-radius: 15px;
+    background-color: rgb(36, 35, 35);
+    color: white;
+
+}
+
+
+ul, li{
+    display: block;
+    width: 100%;
+    padding: 4vh 3vh;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: var(--font);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+#store:hover, #wishlist:hover, #mygame:hover{
+    width: 60vh;
+    background-color: #576a7d;
+    color: white;
+    border-radius: 15px;
+    transform: translate(10px, -10px);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+
+.webname a{
+    text-decoration: none;
+    color: black;
+}
+
+.name, h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.3rem;
+    
+}
+
+.search-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: Search;
+}
+
+#search-bar{
+    padding: 2%;
+    width: 90%;
+    background-color: #5c748a;
+    border: none;
+    box-shadow: 2px 3px 3px rgb(70, 55, 207);
+}
+
+#search-bar::placeholder{
+    color:  darkgray;
+    transition: opacity 0.3s ease;
+}
+
+#search-bar:focus::placeholder{
+    opacity: 0;
+}
+
+#search-icon{
+    position: absolute;
+    top: 61%;
+    right: 0.5px;
+    transform: translateY(-50%);
+}
+
+.profile, .user{
+    grid-area: Profile;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    position: relative;
+    color: black;
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 5%;
+}
+
+.user img{
+    border-radius: 5px;
+    max-height: 40px;
+    max-width: 40px;
+    box-sizing: border-box;
+    object-fit: contain;
+    margin-right: 15px;
+}
+/* ------------------------------------------------------------------------------------- */
+#categories {
+    display: flex;
+    align-items: center;
+    font-size: 2.5em; /* Adjust the font size as needed */
+    padding: 1%;
+}
+
+#categories::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000; /* Adjust the color and style as needed */
+    margin: 0 10px; /* Adjust the space between the text and the lines */
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+.sports, .sports-container, .adventure{
+    padding: 2%;
+}
+
+.sports-container{
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(35px, 1fr));
+    gap: 1rem;
+    /* background-color: aliceblue; */
+}
+
+.sports-title{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: #000 solid 1px;
+}
+
+.sports-games{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.game{
+    display: grid;
+    grid-template-rows: 1fr 6vh;
+    border: #000 solid 1px;
+    max-width: 50vh;
+    overflow: hidden;
+    box-shadow: 2px 6px 6px 3px black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.game:hover{
+    transform: translateY(-10px);
+    transition: transform 0.5s ease;
+}
+
+.game img{
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+}
+
+.details{
+    padding: 5%;
+    color: aliceblue;
+    background: linear-gradient(to left, rgba(3, 48, 126, 0.785), rgba(1, 4, 36, 0.775));
+}
+
+.details .option{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.details i{
+    padding: 0% 3%;
+    align-self: end;
+    justify-self: end;
+}
+
+.details .price{
+    height: fit-content;
+    padding: 1.5%;
+    background-color: rgba(62, 67, 199, 0.841);
+    color: aliceblue;
+    border: 0.5px solid white;
+    cursor: pointer;
+    width: fit-content;
+    min-width: fit-content;
+    align-self: end;
+    justify-self: end;
+}
+
+span{
+    color: chartreuse;
+}

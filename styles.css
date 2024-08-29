@@ -1,0 +1,80 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrollbar on body */
+}
+
+.menu-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    position: fixed; /* Keep the menu button fixed at the top */
+    z-index: 1000; /* Ensure the menu button is above other content */
+}
+
+.menu-container {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; /* Ensure the sidebar is above other content */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s; /* Smooth transition for width */
+    padding-top: 60px;
+}
+
+.menu-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu-nav a:hover {
+    background-color: #575757;
+}
+
+#main-content {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: 0; /* Adjust this to shift content when sidebar opens */
+}
+
+/* Styles for the search bar */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#search-bar {
+    width: 200px;
+    padding: 5px;
+}
+
+#search-icon {
+    margin-left: 10px;
+}
+
+/* Styles for the profile section */
+.profile .user {
+    display: flex;
+    align-items: center;
+}
+
+.profile .user img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
